@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buscar Bonecos</title>
+<style>
+h4{
+    text-shadow: blue, 10px, 5px, 15px;
+}
+h4{
+    color: blue
+}
+
+
+    div{
+        box-shadow: [inset] color offsetx offsety blur [spread];
+    }
+
+input:invalid {
+background-color: hsla(0, 100%, 50%, 0.5);
+}
+
+
+textarea:valid{
+background-color :hsla(59, 100%, 74%, 0.842);
+}
+
+input:valid {
+background-color :hsla(59, 100%, 74%, 0.842);
+}
+
+input {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+select:valid {
+background-color :hsla(59, 100%, 74%, 0.842);
+}
+
+
+header {
+background-color: red;
+margin: 0px;
+padding: 10px;
+height: 25px;
+width: 100%;
+
+}
+nav {
+background-color: orange;
+margin: 0px;
+padding: 10px;
+height: 125px;
+width: 20%;
+float: left;
+}
+section {
+background-color: rgba(66, 70, 66, 0.637);
+margin: 0px;
+padding: 10px;
+height: 1125px;
+width: 55%;
+float: left;
+}
+aside {
+background-color: yellow;
+margin: 0px;
+padding: 10px;
+height: 125px;
+width: 20%;
+float: left;
+}
+footer {
+clear: both;
+background-color: orange;
+margin: 0px;
+padding: 10px;
+height: 25px;
+width: 100%
+}
+
+label {
+  color: rgb(0, 0, 0);
+  text-align: right;
+  size: 30px;
+  text-size-adjust: 90px;
+}
+</style>
+</head>
+<body>
+<header></header>
+
+<div id = "container"></div>
+        <nav><p>Navigation</p></nav>
+        <section>
+                <br><br><br><br>
+                <fieldset>
+                    <legend>Buscar Bonecos</legend>
+                    <br><br>
+
+                    <form name="buscafrom" action="BuscarPorBonecosFiltro.php" method="POST" >
+                
+                        
+                            <label>Buscar pelo nome do boneco:</label>
+                            <br>
+                            <input type="text" name="nome_boneco" size="40" value="">
+                            <br><br><br> 
+
+
+                            
+                                <label>Pelo genero:</label>
+                                <br>
+                                <label>
+                                    Ambos
+                                    <input type="radio" name="genero" value="" checked><br>
+                                </label>
+                                <label>
+                                    Feminino
+                                    <input type="radio" name="genero" value="feminino"><br>
+                                </label>
+                                <label>
+                                    Masculino
+                                    <input type="radio" name="genero" value="masculino" >
+                                    </label>
+                            <br><br>                                       
+                            
+
+                            <label>Pelo tombo do boneco:</label>
+                            <br>
+                            <input type="text" name="tombo" size="40" value="">
+                            <br><br>
+
+                            <label> Buscar por artista:</label>
+                            <br>
+                            <select name="artista">
+                                <option selected="selected" value = "">Todos</option>
+                                <option value="1">Ze Lopes</option>
+                                <option value="2">Davi Teixeira</option>
+                                <option value="3">Mestre Solon</option>
+                            </select>
+                            <br><br>
+
+                            <label> Tipo de manipulacao</label>
+                            <br>
+                            <select name="tipo_manipulacao">
+                                <option selected="selected" value = "">Todos</option>
+                                <option value="marionete">Marionete</option>
+                                <option value="titere">Titere</option>
+                                <option value="fixo">Sem manipulacao</option>
+                            </select>
+                            <br><br>
+
+                            <label>Encontra-se:</label>
+                                <br>
+                                <label>
+                                    Ambos:
+                                    <input type="radio" name="situacao" value="" checked><br>
+                                    </label>
+                                <label>
+                                Em exposicao:
+                                <input type="radio" name="situacao" value="exposto"><br>
+                                </label>
+                                <label>
+                                    Na reserva Tecnica:
+                                    <input type="radio" name="situacao" value="guardado">
+                                    </label>
+                            <br><br>
+
+                            <label>Posse:</label>
+                                <br>
+                                <label>
+                                    Ambos:
+                                    <input type="radio" name="posse" value="" checked><br>
+                                    </label>
+                                <label>
+                                Museu do Mamulengo:
+                                <input type="radio" name="posse" value="museu"><br>
+                                </label>
+                                <label>
+                                    Emprestado:
+                                    <input type="radio" name="posse" value="emprestado"><br>
+                                    </label>
+                            <br><br> 
+
+
+                            <input type="submit" value="Adicionar o boneco">
+                            <input type="reset" name="reset" value="Limpar os campos">
+
+
+
+                    </form>        
+                </fieldset>
+
+
+        
+        </section>
+        <aside><p>Aside</p></aside>
+</div>
+
+<div>
+    
+</div>
+
+<footer><p>This is the footer</p></footer>
+</body>
+</html>

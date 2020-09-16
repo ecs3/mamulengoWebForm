@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastrar Novo Boneco</title>
+
+</head>
+<body>
+<header></header>
+
+<div id = "container"></div>
+        <nav><p>Navigation</p></nav>
+        <section>
+                <br><br><br><br>
+                <fieldset>
+                    <legend>Inserir Novo Boneco</legend>
+                    <br><br>
+                    <form name="insertform" action="cadastrarNovoBoneco.php" method="POST", >
+                
+                        
+                            <label>Nome do Boneco</label>
+                            <br>
+                            <input type="text" name="nome_boneco" size="40">
+                            <br><br>
+
+
+                            
+                                <label>Genero</label>
+                                <br>
+                                <label>
+                                Masculino
+                                <input type="radio" name="genero" value="masculino"><br>
+                                </label>
+                                <label>
+                                    Feminino
+                                    <input type="radio" name="genero" value="feminino"><br>
+                                    </label>
+                            <br><br>                                            
+                            
+
+                            <label>Tombo</label>
+                            <br>
+                            <input type="text" name="tombo" size="40">
+                            <br><br>
+
+                            <label> Autor(a)</label>
+                            <br>
+                            <input list="auto" name="autor" size="40">
+                            <datalist id="auto" >
+                                <option value="1">Ze Lopes</option>
+                                <option value="2">Davi Teixeira</option>
+                                <option value="3">Mestre Solon</option>
+                            </datalist>
+                            <br><br>
+
+                            <label> Tipo de manipulacao</label>
+                            <br>
+                            <select name="tipo_manipulacao">
+                                <option value="Marionete">Marionete</option>
+                                <option value="Titere">Titere</option>
+                                <option value="Boneco sem manipulacao">Sem manipulacao</option>
+                            </select>
+                            <br><br>
+
+                            <label>Altura (cm):</label>
+                            <br>
+                            <input type="number" name="altura" step="0.01">
+                            <br><br>
+
+                            <label>Comprimento (cm):</label>
+                            <br>
+                            <input type="number" name="comprimento" step="0.01">
+                            <br><br>
+
+                            <label>Largura (cm):</label>
+                            <br>
+                            <input type="number" name="largura" step="0.01">
+                            <br><br>
+
+                            <label>Peso (g):</label>
+                            <br>
+                            <input type="number" name="peso" step="0.01">
+                            <br><br>
+
+                            <label>Descricao do boneco:</label>
+                            <br>
+                            <textarea name="descricao" cols="120" rows="10"></textarea>
+                            <br><br>
+
+                            <input type="submit" value="Adicionar o boneco">
+                            <input type="reset" name="reset" value="Limpar os campos">
+
+
+
+                    </form>        
+                </fieldset>
+
+
+        
+        </section>
+        <aside><p>Aside</p></aside>
+</div>
+
+<div>
+    
+</div>
+
+<footer><p>This is the footer</p></footer>
+</body>
+</html>
